@@ -6,9 +6,32 @@
     <description>Recent content on Ali Haris</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Sun, 02 Feb 2020 19:58:58 +0000</lastBuildDate>
     
 	<atom:link href="https://aliharis.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hello, I am Haris 👋</title>
+      <link>https://aliharis.github.io/about/</link>
+      <pubDate>Sun, 02 Feb 2020 19:58:58 +0000</pubDate>
+      
+      <guid>https://aliharis.github.io/about/</guid>
+      <description>I am an engineer / product manager from the tiny islands of Maldives 🇲🇻.
+I am currently living in Edinburgh 🏴󠁧󠁢󠁳󠁣󠁴󠁿, United Kingdom attending grad-school at the University of Edinburgh, studying Entrepreneurship &amp;amp; Innovation.
+I started coding at the age of 12, by mostly reversing engineering HTML, PHP and Python scripts that I stumbled upon on the internet. It was fun editing HTML/PHP on Macromedia Dreamweaver and running Python on Symbian OS.</description>
+    </item>
+    
+    <item>
+      <title>Hello Hugo</title>
+      <link>https://aliharis.github.io/posts/2020/02/hello-hugo/</link>
+      <pubDate>Sun, 02 Feb 2020 19:38:24 +0000</pubDate>
+      
+      <guid>https://aliharis.github.io/posts/2020/02/hello-hugo/</guid>
+      <description>I started blogging in late 2007 on WordPress, and since then I&amp;rsquo;ve had multiple blogs (Blogger, WordPress, etc.), every time lost my content for some reason.
+It&amp;rsquo;s been a while since I&amp;rsquo;ve been thinking about moving to a static site generator and hosting it on Github, so that I don&amp;rsquo;t ever have to worry about hosting it or losing any content.
+I&amp;rsquo;ve finally done this, moved to Hugo, an excellent static site generator written in Go, which I happen to love.</description>
+    </item>
     
   </channel>
 </rss>
