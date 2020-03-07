@@ -1,19 +1,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Posts on Ali Haris</title>
-        <link>https://aliharis.github.io/posts/</link>
+        <link>https://aliharis.net/posts/</link>
         <description>Recent content in Posts on Ali Haris</description>
         <generator>Hugo -- gohugo.io</generator>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
         <lastBuildDate>Sun, 02 Feb 2020 19:38:24 +0000</lastBuildDate>
-        <atom:link href="https://aliharis.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://aliharis.net/posts/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
             <title>Hello Hugo</title>
-            <link>https://aliharis.github.io/posts/2020/02/hello-hugo/</link>
+            <link>https://aliharis.net/posts/2020/02/hello-hugo/</link>
             <pubDate>Sun, 02 Feb 2020 19:38:24 +0000</pubDate>
             
-            <guid>https://aliharis.github.io/posts/2020/02/hello-hugo/</guid>
+            <guid>https://aliharis.net/posts/2020/02/hello-hugo/</guid>
             <description>I started blogging in late 2007 on WordPress, and since then I&amp;rsquo;ve had multiple blogs (Blogger, WordPress, etc.), every time lost my content for some reason.
 It&amp;rsquo;s been a while since I&amp;rsquo;ve been thinking about moving to a static site generator and hosting it on Github, so that I don&amp;rsquo;t ever have to worry about hosting it or losing any content.
 I&amp;rsquo;ve finally done this, moved to Hugo, an excellent static site generator written in Go, which I happen to love.</description>
