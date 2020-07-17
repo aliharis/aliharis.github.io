@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://aliharis.net/tags/academic/</loc>
+    <lastmod>2020-05-07T19:38:24+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://aliharis.net/</loc>
     <lastmod>2020-05-07T19:38:24+00:00</lastmod>
   </url>
@@ -13,7 +18,22 @@
   </url>
   
   <url>
+    <loc>https://aliharis.net/tags/ecosystems/</loc>
+    <lastmod>2020-05-07T19:38:24+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aliharis.net/tags/entrepreneurship/</loc>
+    <lastmod>2020-05-07T19:38:24+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://aliharis.net/posts/</loc>
+    <lastmod>2020-05-07T19:38:24+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aliharis.net/tags/</loc>
     <lastmod>2020-05-07T19:38:24+00:00</lastmod>
   </url>
   
@@ -29,10 +49,6 @@
   
   <url>
     <loc>https://aliharis.net/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>https://aliharis.net/tags/</loc>
   </url>
   
 </urlset>
