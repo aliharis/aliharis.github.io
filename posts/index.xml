@@ -32,6 +32,16 @@ This time I decided to switch to a static generator to keep my content on GitHub
     </item>
     
     <item>
+      <title>GEO calculations with MySQL</title>
+      <link>https://aliharis.net/posts/geo-calculations-with-mysql/</link>
+      <pubDate>Wed, 16 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://aliharis.net/posts/geo-calculations-with-mysql/</guid>
+      <description>With the introduction of apps like Foursquare, apps using user’s locations are now proliferating. I am currently working on an application which uses user&amp;rsquo;s geo-coordinates to do some calculations. Originially my plan was to store the geo-coordinates in the database as a string and do the calculation on the application level. I did some additional research to see a better way to do this.
+These are the functionalities I want to achieve:</description>
+    </item>
+    
+    <item>
       <title>Challenges with accepting online payments in Maldives</title>
       <link>https://aliharis.net/posts/challenges-with-accepting-online-payments-in-maldives/</link>
       <pubDate>Thu, 10 Apr 2014 00:00:00 +0000</pubDate>
