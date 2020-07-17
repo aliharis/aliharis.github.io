@@ -1,0 +1,13 @@
+
+.img-sm {
+    text-align: center;
+}
+
+.img-sm:after {
+    clear: both;
+}
+
+.img-sm img {
+    max-height: 300px;
+    width: auto;
+}
