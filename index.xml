@@ -42,5 +42,15 @@ I am currently working at Payer - A FinTech startup that I co-founded to create 
 This time I decided to switch to a static generator to keep my content on GitHub.</description>
     </item>
     
+    <item>
+      <title>Challenges with accepting online payments in Maldives</title>
+      <link>https://aliharis.net/posts/challenges-with-accepting-online-payments-in-maldives/</link>
+      <pubDate>Thu, 10 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://aliharis.net/posts/challenges-with-accepting-online-payments-in-maldives/</guid>
+      <description>This article is outdated and does not reflect on the current environment.
+ Entrepreneurs and tech geeks has attempted to create internet based businesses in the Maldives since the early 2000s. Most of them are no longer around due the challenges they faced with running an internet venture. One of the very common challenges shared by most entrepreneurs and software developers of Maldives is not having access to an affordable payment gateway solution.</description>
+    </item>
+    
   </channel>
 </rss>
