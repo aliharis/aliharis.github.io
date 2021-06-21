@@ -2,62 +2,61 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ali Haris</title>
-    <link>https://aliharis.xyz/</link>
+    <link>https://haris.pm/</link>
     <description>Recent content on Ali Haris</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 07 May 2020 19:38:24 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 10 Jun 2021 00:00:00 +0500</lastBuildDate><atom:link href="https://haris.pm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>eFaas should become the national standard</title>
+      <link>https://haris.pm/posts/efaas-should-become-the-national-standard/</link>
+      <pubDate>Thu, 10 Jun 2021 00:00:00 +0500</pubDate>
+      
+      <guid>https://haris.pm/posts/efaas-should-become-the-national-standard/</guid>
+      <description>Stronger political will is needed to fully realise the potential of the authentication service and truly bring government services, and Digital Identity, into the digital now.
+ This article was published on Maldives Financial Review - Read online on Maldives Financial Review.
+ </description>
+    </item>
     
-	<atom:link href="https://aliharis.xyz/index.xml" rel="self" type="application/rss+xml" />
-    
+    <item>
+      <title>Financial Technology 101</title>
+      <link>https://haris.pm/posts/financial-technology-101/</link>
+      <pubDate>Thu, 03 Jun 2021 22:23:37 +0500</pubDate>
+      
+      <guid>https://haris.pm/posts/financial-technology-101/</guid>
+      <description>New, or &amp;lsquo;disruptive,&amp;rsquo; technologies and innovations have always seen active opposition from those who stand to lose entrenched, or privileged, market positions.
+ This article was published on Maldives Financial Review - Read online on Maldives Financial Review.
+ </description>
+    </item>
     
     <item>
       <title>Analysis of Monzo through the lens of Entrepreneurial Ecosystems</title>
-      <link>https://aliharis.xyz/posts/analysis-of-monzo-through-the-lens-of-entreprenurial-ecosystems/</link>
+      <link>https://haris.pm/posts/analysis-of-monzo-through-the-lens-of-entreprenurial-ecosystems/</link>
       <pubDate>Thu, 07 May 2020 19:38:24 +0000</pubDate>
       
-      <guid>https://aliharis.xyz/posts/analysis-of-monzo-through-the-lens-of-entreprenurial-ecosystems/</guid>
+      <guid>https://haris.pm/posts/analysis-of-monzo-through-the-lens-of-entreprenurial-ecosystems/</guid>
       <description>This article is a stripped-down version of an academic report I&amp;rsquo;ve written on fintech ecosystems and what role a keystone organisations plays in it.
  Background This article analyzes Monzo – a challenger bank based in the UK to understand the business model and the role they play inside the ecosystem. The ecosystem analysis will be done through the lens of academic literature on business ecosystems to further understand the strategies behind the ecosystem.</description>
     </item>
     
     <item>
-      <title>Hello there.</title>
-      <link>https://aliharis.xyz/about/</link>
+      <title>Hello.</title>
+      <link>https://haris.pm/about/</link>
       <pubDate>Sun, 02 Feb 2020 19:58:58 +0000</pubDate>
       
-      <guid>https://aliharis.xyz/about/</guid>
-      <description>Hello there, I&amp;rsquo;m Haris.
-I am a product manager and engineer from Maldives. I started coding at the age of 12 by reverse engineering the webpages I would save from the web, and running Python scripts on Symbian OS (PyS60). These days I work mostly with Go and JavaScript.
-I am currently working at Payer - A FinTech startup that I co-founded to create a mobile wallet for Maldives. Besides engineering, I am passionate about product management.</description>
-    </item>
-    
-    <item>
-      <title>Hello Hugo</title>
-      <link>https://aliharis.xyz/posts/hello-hugo/</link>
-      <pubDate>Sun, 02 Feb 2020 19:38:24 +0000</pubDate>
-      
-      <guid>https://aliharis.xyz/posts/hello-hugo/</guid>
-      <description>I started blogging in late 2007 on Blogger, and since then I&amp;rsquo;ve had multiple blogs (Blogger, WordPress, etc.).
-This time I decided to switch to a static generator to keep my content on GitHub.</description>
-    </item>
-    
-    <item>
-      <title>GEO calculations with MySQL</title>
-      <link>https://aliharis.xyz/posts/geo-calculations-with-mysql/</link>
-      <pubDate>Wed, 16 Jul 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://aliharis.xyz/posts/geo-calculations-with-mysql/</guid>
-      <description>With the introduction of apps like Foursquare, apps using user’s locations are now proliferating. I am currently working on an application which uses user&amp;rsquo;s geo-coordinates to do some calculations. Originially my plan was to store the geo-coordinates in the database as a string and do the calculation on the application level. I did some additional research to see a better way to do this.
-These are the functionalities I want to achieve:</description>
+      <guid>https://haris.pm/about/</guid>
+      <description>Hello, I&amp;rsquo;m Haris.
+I am an aspiring Product Manager (Growth/Marketing) from Maldives.
+I used to be a software engineer. I started coding at the age of 12 by editing webpages on the internet and tinkering with Python.
+Due to my passion for building products, I have shifted from a tech role to a product role, especially towards product marketing and growth. I prefer working with people from multiple disciplines (ui/ux, tech, bizdev, marketing, etc.</description>
     </item>
     
     <item>
       <title>Challenges with accepting online payments in Maldives</title>
-      <link>https://aliharis.xyz/posts/challenges-with-accepting-online-payments-in-maldives/</link>
+      <link>https://haris.pm/posts/challenges-with-accepting-online-payments-in-maldives/</link>
       <pubDate>Thu, 10 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://aliharis.xyz/posts/challenges-with-accepting-online-payments-in-maldives/</guid>
+      <guid>https://haris.pm/posts/challenges-with-accepting-online-payments-in-maldives/</guid>
       <description>This article is outdated and does not reflect on the current environment.
  Entrepreneurs and tech geeks has attempted to create internet based businesses in the Maldives since the early 2000s. Most of them are no longer around due the challenges they faced with running an internet venture. One of the very common challenges shared by most entrepreneurs and software developers of Maldives is not having access to an affordable payment gateway solution.</description>
     </item>
