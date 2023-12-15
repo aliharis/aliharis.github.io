@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		 
+			
+  
+    <meta name="twitter:card" content="summary"/>
+    
+      <meta name="twitter:image" content="https://haris.pm/images/avatar.png" />
+    
+  
+  
+  <meta name="twitter:title" content="GEO calculations with MySQL"/>
+  <meta name="twitter:description" content="With the introduction of apps like Foursquare, apps using user’s locations are now proliferating. I am currently working on an application which uses user&rsquo;s geo-coordinates to do some calculations. Originially my plan was to store the geo-coordinates in the database as a string and do the calculation on the application level. I did some additional research to see a better way to do this.
+These are the functionalities I want to achieve:"/>
+  
+    <meta name="twitter:site" content="@iharis"/>
+  
+  
+  
+  
+    <meta name="twitter:creator" content="@Ali Haris"/>
+  
+
+
+
+		
+		<meta name="author" content="Ali Haris">
+		<meta name="description" content="Product Manager from Maldives">
+		<meta name="generator" content="Hugo 0.84.0" />
+		<title>GEO calculations with MySQL &middot; Ali Haris</title>
+		<link rel="shortcut icon" href="https://haris.pm/images/favicon.ico">
+		<link rel="stylesheet" href="https://haris.pm/css/style.css">
+		<link rel="stylesheet" href="https://haris.pm/css/highlight.css">
+
+		
+		<link rel="stylesheet" href="https://haris.pm/css/font-awesome.min.css">
+		
+
+		
+
+		
+		<link rel="stylesheet" href="https://haris.pm/css/foo.css">
+		
+	</head>
+
+    <body>
+       <nav class="main-nav">
+	
+	
+		<a href='https://haris.pm/'> <span class="arrow">←</span>Home</a>
+	
+	<a href='https://haris.pm/posts'>Archive</a>
+	<a href='https://haris.pm/tags'>Tags</a>
+	<a href='https://haris.pm/about'>About</a>
+
+	
+
+	
+</nav>
+
+
+        <section id="wrapper" class="post">
+            <article>
+                <header>
+                    <h1>
+                        GEO calculations with MySQL
+                    </h1>
+                    <h2 class="headline">
+                    Jul 16, 2014 00:00
+                    · 539 words
+                    · 3 minute read
+                      <span class="tags">
+                      
+                      </span>
+                    </h2>
+                </header>
+                
+                <section id="post-body">
+                    <p>With the introduction of apps like Foursquare, apps using user’s locations are now proliferating. I am currently working on an application which uses user&rsquo;s geo-coordinates to do some calculations. Originially my plan was to store the geo-coordinates in the database as a string and do the calculation on the application level. I did some additional research to see a better way to do this.</p>
+<p>These are the functionalities I want to achieve:</p>
+<ul>
+<li>Finding distance between 2 points using latitude and longitude.</li>
+<li>Finding places of interest in a radius. (Example: All the coffee shops in 1 KM radius.</li>
+</ul>
+<p><strong>Basics</strong></p>
+<p>We will start with a table called “places” in which we will store the geo-coordinates (latitude, longitude) of the places. Usually one would just create 2 string (varchar) fields and store the latitude and longitude in respective fields. Afterwards they would just pull of the latitude and longitude data and do the calculations in the application script. I came across spatial data type that is just created for this purpose. By using spatial data type, we can avoid the calculation on application level and do it in the DBMS.</p>
+<p>Getting back to our table “places”, we will add a field called coord with the data type POINT, in which we can store both latitude and longitude.</p>
+<pre><code>ALTER TABLE places ADD coord POINT NOT NULL;
+CREATE SPATIAL INDEX coord ON places (coord);
+</code></pre><p>Insert some location data into the table in terms of POINT(X Y) or POINT(latitude longitude). In this case X is latitude and Y is longitude. Technically it doesn’t matter how you store them as long as you follow the same convention while reading it back.</p>
+<pre><code>INSERT INTO places (coord) VALUES( GeomFromText( 'POINT(6.91867187086 79.861366946)' ));
+</code></pre><p>Get those X, Y coordinates back from table.</p>
+<pre><code>SELECT X(coord) as latitude, Y(coord) as longitude FROM places
+</code></pre><p>Calculate distance between 2 points:
+Lets assume my current location is 6.905235 79.862687 (which is about 1 KM from the places) and I would like to calculate the distance between the places in my table with my current location. The following table shows what I have right now:</p>
+<pre><code>mysql&gt; SELECT name, X(coord) as latitude, Y(coord) as longitude FROM places;
++----------------------+---------------+---------------+
+| name                 | latitude      | longitude     |
++----------------------+---------------+---------------+
+| APIIT                | 6.91867187086 |  79.861366946 |
+| Access Towers        | 6.92020089776 | 79.8574130003 |
+| Gloria Jean's Coffee |  6.9178845525 | 79.8631847629 |
++----------------------+---------------+---------------+
+3 rows in set (0.00 sec)
+</code></pre><p>I can easily calculate the distance between those places and my current location by using a query, and order it by the distance.</p>
+<pre><code>SELECT
+name,
+(GLength(
+LineStringFromWKB(
+  LineString(
+    coord, 
+    GeomFromText('POINT(6.905235 79.862687)')
+  )
+ )
+))
+AS distance
+FROM places
+ORDER BY distance ASC
+</code></pre><pre><code>mysql&gt; SELECT name, (GLength(LineStringFromWKB(LineString(coord, GeomFromText('POINT(6.905235 79.862687)'))))) * 100 AS distance FROM places ORDER BY distance ASC;
++----------------------+--------------------+
+| name                 | distance           |
++----------------------+--------------------+
+| Gloria Jean's Coffee |  1.265934225601339 |
+| APIIT                | 1.3501556986925545 |
+| Access Towers        | 1.5867991952301663 |
++----------------------+--------------------+
+3 rows in set (0.00 sec)
+</code></pre><p>In the query above, I have used *100 to convert the distance to KM.</p>
+<p>There’s a lot more you can do with Spatial Data and MySQL, but this is all for now. Have a look at this <a href="http://www.xarg.org/2009/12/people-near-you-with-mysql/">tutorial</a> by Robert If you are interested in reading more on the topic.</p>
+
+                </section>
+            </article>
+
+            
+                <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fharis.pm%2fposts%2fgeo-calculations-with-mysql%2f - GEO%20calculations%20with%20MySQL by @iharis"><span class="icon-twitter"> tweet</span></a>
+
+<a class="facebook" href="#" onclick="
+    window.open(
+      'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+      'facebook-share-dialog',
+      'width=626,height=436');
+    return false;"><span class="icon-facebook-rect"> Share</span>
+</a>
+
+            
+
+            
+
+            
+
+            <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    <a class="symbol" href="https://www.github.com/aliharis">
+        <i class="fa fa-github"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.linkedin.com/in/aliharis">
+        <i class="fa fa-linkedin"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.twitter.com/iharis">
+        <i class="fa fa-twitter"></i>
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+       © Copyright 2021 <i class="fa fa-heart" aria-hidden="true"></i> Ali Haris
+    
+    </p>
+    <p class="small">
+        Powered by <a href="http://www.gohugo.io/">Hugo</a> Theme By <a href="https://github.com/nodejh/hugo-theme-cactus-plus">nodejh</a>
+    </p>
+</footer>
+
+        </section>
+
+        <script src="https://haris.pm/js/jquery-3.3.1.min.js"></script>
+<script src="https://haris.pm/js/main.js"></script>
+<script src="https://haris.pm/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-20745212-13', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+
+
+    </body>
+</html>
