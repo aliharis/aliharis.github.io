@@ -1,0 +1,427 @@
+/* ============================================
+   Minimal blog — clean, sans-serif, 2007–2009
+   ============================================ */
+
+/* --- Typography: clean sans-serif --- */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+/* --- Layout: left-aligned, simple --- */
+.author {
+  text-align: left;
+}
+.author .author-bio {
+  margin: 0;
+}
+.footer {
+  text-align: center;
+}
+.footer_social-icons {
+  justify-content: center;
+}
+.not-found {
+  text-align: left;
+  justify-content: flex-start;
+}
+.header-title.center {
+  text-align: left;
+}
+
+/* --- Navbar --- */
+.navbar {
+  width: 100%;
+  max-width: 100%;
+  border-bottom: 1px solid #e0e0e0;
+}
+.menu .menu-link {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.875rem;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+/* --- Post list --- */
+.post-item {
+  transition: none;
+  border-left: none;
+}
+.post-item:hover {
+  background-color: transparent;
+  border-left-color: transparent;
+}
+.post-item .post-item-title a {
+  text-decoration: none;
+}
+.post-item .post-item-title a:hover {
+  color: #06c;
+  cursor: pointer;
+}
+.post-item-meta {
+  font-size: 0.8rem;
+  color: #999;
+  letter-spacing: 0;
+}
+
+/* --- Links --- */
+.page-content a {
+  color: #06c;
+  text-decoration: none;
+}
+.page-content a:hover {
+  text-decoration: underline;
+}
+.page-content a:visited {
+  color: #551a8b;
+}
+
+/* --- Blockquotes --- */
+blockquote {
+  border-left: 3px solid #ddd;
+  background: transparent;
+  padding: 0 1rem;
+  color: #666;
+}
+
+/* --- Images: clean, no bevels --- */
+.page-content img {
+  border: none;
+  padding: 0;
+  background: transparent;
+  box-shadow: none;
+  max-width: 100%;
+}
+
+/* --- Code --- */
+p > code,
+li > code {
+  font-family: Menlo, Consolas, "Courier New", monospace;
+  font-size: 0.9em;
+  background: #f5f5f5;
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+  padding: 1px 5px;
+  box-shadow: none;
+}
+
+/* --- HR --- */
+hr {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* --- Selection --- */
+::selection {
+  background: #b4d5fe;
+  color: #000;
+}
+
+/* --- Footer --- */
+.footer .footer_copyright {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.8rem;
+  color: #999;
+}
+.footer_social-icons::after {
+  content: none;
+}
+
+/* --- Author --- */
+.author .author-name {
+  text-shadow: none;
+}
+
+/* ============================================
+   Dark mode
+   ============================================ */
+html.dark .navbar {
+  border-bottom-color: #333;
+}
+html.dark .post-item:hover {
+  background-color: transparent;
+  border-left-color: transparent;
+}
+html.dark .post-item .post-item-title a:hover {
+  color: #6db3f2;
+}
+html.dark .author .author-name {
+  text-shadow: none;
+}
+html.dark .page-content a {
+  color: #6db3f2;
+}
+html.dark .page-content a:visited {
+  color: #b89fd6;
+}
+html.dark .page-content a:hover {
+  text-decoration: underline;
+}
+html.dark blockquote {
+  background: transparent;
+  border-left-color: #444;
+  color: #999;
+}
+html.dark .page-content img {
+  border: none;
+  background: transparent;
+  box-shadow: none;
+}
+html.dark p > code,
+html.dark li > code {
+  background: #1e2028;
+  border-color: #333;
+  box-shadow: none;
+}
+html.dark hr {
+  border-top-color: #333;
+}
+html.dark ::selection {
+  background: #3a6abf;
+  color: #fff;
+}
+html.dark .post-item-meta {
+  color: #777;
+}
+html.dark .footer .footer_copyright {
+  color: #777;
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not(.dark):not(.light) .navbar {
+    border-bottom-color: #333;
+  }
+  html:not(.dark):not(.light) .post-item:hover {
+    background-color: transparent;
+    border-left-color: transparent;
+  }
+  html:not(.dark):not(.light) .post-item .post-item-title a:hover {
+    color: #6db3f2;
+  }
+  html:not(.dark):not(.light) .author .author-name {
+    text-shadow: none;
+  }
+  html:not(.dark):not(.light) .page-content a {
+    color: #6db3f2;
+  }
+  html:not(.dark):not(.light) .page-content a:visited {
+    color: #b89fd6;
+  }
+  html:not(.dark):not(.light) .page-content a:hover {
+    text-decoration: underline;
+  }
+  html:not(.dark):not(.light) blockquote {
+    background: transparent;
+    border-left-color: #444;
+    color: #999;
+  }
+  html:not(.dark):not(.light) .page-content img {
+    border: none;
+    background: transparent;
+    box-shadow: none;
+  }
+  html:not(.dark):not(.light) p > code,
+  html:not(.dark):not(.light) li > code {
+    background: #1e2028;
+    border-color: #333;
+    box-shadow: none;
+  }
+  html:not(.dark):not(.light) hr {
+    border-top-color: #333;
+  }
+  html:not(.dark):not(.light) ::selection {
+    background: #3a6abf;
+    color: #fff;
+  }
+  html:not(.dark):not(.light) .post-item-meta {
+    color: #777;
+  }
+  html:not(.dark):not(.light) .footer .footer_copyright {
+    color: #777;
+  }
+}
+
+/* ============================================
+   Scrappy Lab — Listing page
+   ============================================ */
+.scrappy-lab-listing {
+  margin-top: 30px;
+}
+
+.scrappy-lab-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 24px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.15s ease;
+}
+.scrappy-lab-row + .scrappy-lab-row {
+  margin-top: 20px;
+}
+.scrappy-lab-row:hover {
+  border-color: #bbb;
+  color: inherit;
+}
+.scrappy-lab-row__thumb {
+  flex-shrink: 0;
+  width: 160px;
+}
+.scrappy-lab-row__thumb img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+.scrappy-lab-row__body {
+  flex: 1;
+  min-width: 0;
+}
+.scrappy-lab-row__title {
+  margin: 0 0 12px 0 !important;
+  font-size: 1.1rem;
+}
+.scrappy-lab-row__summary {
+  margin: 0 0 12px 0;
+  color: #777;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+.scrappy-lab-row__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.scrappy-lab-row__tag {
+  display: inline-block;
+  font-size: 0.8rem;
+  padding: 2px 10px;
+  border-radius: 3px;
+  background-color: #f0f0f0;
+  color: #555;
+}
+
+@media screen and (max-width: 768px) {
+  .scrappy-lab-row {
+    flex-direction: column;
+  }
+  .scrappy-lab-row__thumb {
+    width: 100%;
+  }
+}
+
+/* Scrappy Lab — Detail page */
+.scrappy-lab-detail__hero {
+  margin-top: 24px;
+}
+.scrappy-lab-detail__hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+}
+.scrappy-lab-detail__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 12px;
+}
+.scrappy-lab-detail__tag {
+  display: inline-block;
+  font-size: 0.8rem;
+  padding: 2px 10px;
+  border-radius: 3px;
+  background-color: #f0f0f0;
+  color: #555;
+}
+.scrappy-lab-detail__link {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid #e0e0e0;
+}
+.scrappy-lab-detail__link a {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 3px;
+  background-color: #f0f0f0;
+  color: #333;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background-color 0.15s ease;
+}
+.scrappy-lab-detail__link a:hover {
+  background-color: #e0e0e0;
+}
+
+/* Dark mode — Scrappy Lab */
+html.dark .scrappy-lab-row {
+  border-color: #333;
+}
+html.dark .scrappy-lab-row:hover {
+  border-color: #555;
+}
+html.dark .scrappy-lab-row__summary {
+  color: #888;
+}
+html.dark .scrappy-lab-row__tag {
+  background-color: #2a2a2a;
+  color: #aaa;
+}
+html.dark .scrappy-lab-detail__hero img {
+  border-color: #333;
+}
+html.dark .scrappy-lab-detail__tag {
+  background-color: #2a2a2a;
+  color: #aaa;
+}
+html.dark .scrappy-lab-detail__link {
+  border-color: #333;
+}
+html.dark .scrappy-lab-detail__link a {
+  background-color: #2a2a2a;
+  color: #aaa;
+}
+html.dark .scrappy-lab-detail__link a:hover {
+  background-color: #3a3a3a;
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not(.dark):not(.light) .scrappy-lab-row {
+    border-color: #333;
+  }
+  html:not(.dark):not(.light) .scrappy-lab-row:hover {
+    border-color: #555;
+  }
+  html:not(.dark):not(.light) .scrappy-lab-row__summary {
+    color: #888;
+  }
+  html:not(.dark):not(.light) .scrappy-lab-row__tag {
+    background-color: #2a2a2a;
+    color: #aaa;
+  }
+  html:not(.dark):not(.light) .scrappy-lab-detail__tag {
+    background-color: #2a2a2a;
+    color: #aaa;
+  }
+  html:not(.dark):not(.light) .scrappy-lab-detail__link {
+    border-color: #333;
+  }
+  html:not(.dark):not(.light) .scrappy-lab-detail__link a {
+    background-color: #2a2a2a;
+    color: #aaa;
+  }
+  html:not(.dark):not(.light) .scrappy-lab-detail__link a:hover {
+    background-color: #3a3a3a;
+  }
+}

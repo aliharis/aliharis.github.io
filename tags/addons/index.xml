@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Addons on Haris Ali - Product Human from the Maldives</title><link>https://haris.pm/tags/addons/</link><description>Recent content in Addons on Haris Ali - Product Human from the Maldives</description><generator>Hugo -- gohugo.io</generator><language>en-gb</language><lastBuildDate>Mon, 11 Feb 2008 00:00:00 +0000</lastBuildDate><atom:link href="https://haris.pm/tags/addons/index.xml" rel="self" type="application/rss+xml"/><item><title>Web Developer Firefox Add-on</title><link>https://haris.pm/posts/web-developer-firefox-addon/</link><pubDate>Mon, 11 Feb 2008 00:00:00 +0000</pubDate><guid>https://haris.pm/posts/web-developer-firefox-addon/</guid><description>&lt;p&gt;I just discovered the &lt;strong&gt;Web Developer&lt;/strong&gt; add-on for Firefox and I’m impressed — it’s an essential toolkit for anyone building websites. It exposes a lot of useful features that make debugging and testing faster and more practical.&lt;/p&gt;
+&lt;p&gt;Here are some of the things it lets you do:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Resize Firefox window&lt;/strong&gt; — quickly switch the browser viewport to common resolutions (for example, 1024×768 or 800×600) to see how your layout responds.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;View HTTP headers&lt;/strong&gt; — inspect request and response headers for the current page.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;View CSS styles&lt;/strong&gt; — inspect the CSS rules applied to elements on the page.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Live CSS editing&lt;/strong&gt; — modify CSS in real time and see results immediately (very handy for experimenting).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Reveal passwords / hidden form fields&lt;/strong&gt; — temporarily view form values that would normally be obscured.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cookie management&lt;/strong&gt; — disable, add, delete, or clear cookies (including session cookies) for the current domain.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Disable plugins and scripting&lt;/strong&gt; — turn off Java or JavaScript to test progressive enhancement and behavior without scripts.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Page information&lt;/strong&gt; — view a summary of lots of page details (images, links, forms, etc.).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Validate code&lt;/strong&gt; — run quick validations on HTML and CSS.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;View source variations&lt;/strong&gt; — see original source, generated source, and more.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you haven’t tried it yet, grab it from the Firefox Add-ons site:&lt;/p&gt;</description></item></channel></rss>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SQLite on Haris Ali - Product Human from the Maldives</title>
+    <link>https://haris.pm/tags/sqlite/</link>
+    <description>Recent content in SQLite on Haris Ali - Product Human from the Maldives</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Wed, 15 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://haris.pm/tags/sqlite/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FastBooks</title>
+      <link>https://haris.pm/scrappy-lab/fastbooks/</link>
+      <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://haris.pm/scrappy-lab/fastbooks/</guid>
+      
+      <description>A lightweight book tracking app built for speed and simplicity. Track what you&amp;rsquo;re reading, want to read, and have finished — without the bloat.</description>
+      
+    </item>
+    
+  </channel>
+</rss>

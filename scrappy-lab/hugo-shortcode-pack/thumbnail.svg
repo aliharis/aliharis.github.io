@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="240" viewBox="0 0 400 240">
+  <rect width="400" height="240" fill="#5c1a5c" rx="8"/>
+  <text x="200" y="120" font-family="system-ui, sans-serif" font-size="48" font-weight="bold" fill="#d4a3d4" text-anchor="middle" dominant-baseline="central">HSP</text>
+</svg>

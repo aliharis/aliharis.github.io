@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="240" viewBox="0 0 400 240">
+  <rect width="400" height="240" fill="#FF5DA2" rx="8"/>
+  <rect x="3" y="3" width="394" height="234" fill="none" stroke="#1F1F1F" stroke-width="2" rx="6"/>
+  <text x="200" y="115" font-family="system-ui, sans-serif" font-size="44" font-weight="bold" fill="#1F1F1F" text-anchor="middle" dominant-baseline="central">pay pls.</text>
+  <text x="203" y="118" font-family="system-ui, sans-serif" font-size="44" font-weight="bold" fill="#FFD84D" text-anchor="middle" dominant-baseline="central" opacity="0.4">pay pls.</text>
+</svg>
